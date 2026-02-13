@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RSVP for our wedding. Let us know if you can join us!">
+  <title>RSVP - Wedding of Jane & John</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <nav class="nav-container">
+      <div class="nav-logo">
+        <script>document.write(CONFIG.COUPLE_NAMES)</script>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="rsvp.html" class="nav-link">RSVP</a></li>
+        <li><a href="details.html" class="nav-link">Details</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>RSVP</h1>
+        <p>We hope you can join us! Please fill out the form below to let us know.</p>
+      </div>
+    </section>
+
+    <!-- RSVP Form Section -->
+    <section class="section">
+      <div class="container rsvp-form-container">
+
+        <div class="rsvp-form">
+          <div class="rsvp-intro">
+            <h2>Répondez S'il Vous Plaît</h2>
+            <p>Please respond by <strong id="rsvp-deadline">July 15, 2026</strong></p>
+          </div>
+
+          <form id="rsvp-form" novalidate>
+
+            <!-- Guest Information -->
+            <fieldset class="form-fieldset">
+              <legend class="form-legend">Your Information</legend>
+
+              <div class="form-group">
+                <label for="guestName" class="form-label required">Full Name(s)</label>
+                <input
+                  type="text"
+                  id="guestName"
+                  name="guestName"
+                  class="form-input"
+                  placeholder="John and Jane Doe"
+                  required
+                  aria-required="true"
+                >
+                <span class="form-help">Please include all names on your invitation</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label required">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="your.email@example.com"
+                  required
+                  aria-required="true"
+                >
+                <span class="form-help">We'll send your confirmation here</span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="form-input"
+                  placeholder="(555) 123-4567"
+                >
+                <span class="form-help">Optional</span>
+              </div>
+            </fieldset>
+
+            <!-- Attendance -->
+            <fieldset class="form-fieldset">
+              <legend class="form-legend">Will You Attend?</legend>
+
+              <div class="form-radio-group">
+                <div class="form-radio">
+                  <input
+                    type="radio"
+                    id="attending-yes"
+                    name="attending"
+                    value="yes"
+                    required
+                    aria-required="true"
+                  >
+                  <label for="attending-yes">Yes, I'll be there!</label>
+                </div>
+
+                <div class="form-radio">
+                  <input
+                    type="radio"
+                    id="attending-no"
+                    name="attending"
+                    value="no"
+                    required
+                    aria-required="true"
+                  >
+                  <label for="attending-no">Sorry, I can't make it</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Conditional Fields (shown only if attending) -->
+            <div id="conditional-fields" class="hidden">
+
+              <!-- Guest Count -->
+              <fieldset class="form-fieldset">
+                <legend class="form-legend">Number of Guests</legend>
+
+                <div class="form-group">
+                  <label for="guestCount" class="form-label required">How many guests will attend?</label>
+                  <input
+                    type="number"
+                    id="guestCount"
+                    name="guestCount"
+                    class="form-input"
+                    min="1"
+                    max="10"
+                    value="1"
+                  >
+                  <span class="form-help">Including yourself</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="guestNames" class="form-label">Guest Names</label>
+                  <textarea
+                    id="guestNames"
+                    name="guestNames"
+                    class="form-textarea"
+                    placeholder="If bringing additional guests, please list their names"
+                    rows="3"
+                  ></textarea>
+                  <span class="form-help">One name per line</span>
+                </div>
+              </fieldset>
+
+              <!-- Meal Preferences -->
+              <fieldset class="form-fieldset">
+                <legend class="form-legend">Meal Preferences</legend>
+                <p class="form-help mb-md">Please select a meal preference for each guest</p>
+
+                <div id="meal-preferences-container">
+                  <!-- Meal preference fields will be dynamically generated here -->
+                </div>
+              </fieldset>
+
+              <!-- Dietary Restrictions -->
+              <fieldset class="form-fieldset">
+                <legend class="form-legend">Additional Information</legend>
+
+                <div class="form-group">
+                  <label for="dietaryRestrictions" class="form-label">Dietary Restrictions or Allergies</label>
+                  <textarea
+                    id="dietaryRestrictions"
+                    name="dietaryRestrictions"
+                    class="form-textarea"
+                    placeholder="Please let us know about any dietary restrictions or food allergies"
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="specialRequests" class="form-label">Special Requests or Messages</label>
+                  <textarea
+                    id="specialRequests"
+                    name="specialRequests"
+                    class="form-textarea"
+                    placeholder="Any special accommodations or a message for us?"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </fieldset>
+
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-large btn-block">
+                Submit RSVP
+              </button>
+            </div>
+
+            <!-- Privacy Notice -->
+            <p class="text-center text-sm text-secondary mt-md">
+              Your information will only be used for wedding planning purposes and will not be shared with third parties.
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <script>document.write(CONFIG.COUPLE_NAMES)</script>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="index.html" class="footer-link">Home</a></li>
+        <li><a href="rsvp.html" class="footer-link">RSVP</a></li>
+        <li><a href="details.html" class="footer-link">Details</a></li>
+      </ul>
+
+      <p class="footer-copyright">
+        <script>
+          document.write(`&copy; ${new Date().getFullYear()} ${CONFIG.COUPLE_NAMES}. All rights reserved.`);
+        </script>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/rsvp-form.js"></script>
+
+</body>
+</html>

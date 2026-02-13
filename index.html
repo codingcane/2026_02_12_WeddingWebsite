@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join us for our wedding celebration! RSVP online and find all the details about our special day.">
+  <meta name="keywords" content="wedding, RSVP, celebration">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Wedding of Jane & John">
+  <meta property="og:description" content="Join us for our wedding celebration!">
+  <meta property="og:type" content="website">
+
+  <title>Home - Wedding of Jane & John</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <nav class="nav-container">
+      <div class="nav-logo">
+        <script>document.write(CONFIG.COUPLE_NAMES)</script>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="rsvp.html" class="nav-link">RSVP</a></li>
+        <li><a href="details.html" class="nav-link">Details</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80" alt="Wedding venue" class="hero-background">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <script>document.write(CONFIG.COUPLE_NAMES)</script>
+        </h1>
+        <p class="hero-subtitle">Together with their families, invite you to celebrate their wedding</p>
+        <p class="hero-date" id="wedding-date">
+          <script>
+            const date = new Date(CONFIG.WEDDING_DATE);
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.write(date.toLocaleDateString('en-US', options));
+          </script>
+        </p>
+        <a href="rsvp.html" class="btn btn-primary btn-large">RSVP Now</a>
+      </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="section welcome-section">
+      <div class="container">
+        <div class="welcome-content">
+          <div class="welcome-text">
+            <h2>We're Getting Married!</h2>
+            <p>We are thrilled to invite you to share in our joy as we exchange vows and celebrate the beginning of our journey together.</p>
+            <p>Your presence would make our day even more special. Please join us for an unforgettable celebration filled with love, laughter, and cherished memories.</p>
+            <p>We can't wait to see you there!</p>
+          </div>
+          <div class="welcome-image">
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=80" alt="Happy couple" class="img-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="section countdown-section">
+      <div class="container">
+        <h2>Counting Down to Our Big Day</h2>
+        <div class="countdown"></div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Will You Be There?</h2>
+          <p>Please let us know if you can join us by submitting your RSVP. We need your response to finalize our arrangements.</p>
+          <a href="rsvp.html" class="btn btn-primary btn-large">RSVP Now</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <script>document.write(CONFIG.COUPLE_NAMES)</script>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="index.html" class="footer-link">Home</a></li>
+        <li><a href="rsvp.html" class="footer-link">RSVP</a></li>
+        <li><a href="details.html" class="footer-link">Details</a></li>
+      </ul>
+
+      <div class="footer-social" id="footer-social">
+        <!-- Social media links will be dynamically added if configured -->
+      </div>
+
+      <p class="footer-copyright">
+        <script>
+          document.write(`&copy; ${new Date().getFullYear()} ${CONFIG.COUPLE_NAMES}. All rights reserved.`);
+        </script>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

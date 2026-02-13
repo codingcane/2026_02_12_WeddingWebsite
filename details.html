@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wedding details including venue, schedule, accommodations, and more.">
+  <title>Details - Wedding of Jane & John</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <nav class="nav-container">
+      <div class="nav-logo">
+        <script>document.write(CONFIG.COUPLE_NAMES)</script>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="rsvp.html" class="nav-link">RSVP</a></li>
+        <li><a href="details.html" class="nav-link">Details</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Wedding Details</h1>
+        <p>Everything you need to know about our special day</p>
+      </div>
+    </section>
+
+    <!-- Ceremony Details -->
+    <section class="section">
+      <div class="container">
+        <div class="details-grid">
+
+          <div class="detail-card">
+            <div class="detail-card-header">
+              <div class="detail-card-icon">🌸</div>
+              <h2 class="detail-card-title">Ceremony</h2>
+            </div>
+
+            <div class="detail-info">
+              <div class="detail-info-item">
+                <div class="detail-info-label">Time</div>
+                <div class="detail-info-value">
+                  <script>document.write(CONFIG.CEREMONY_TIME)</script>
+                </div>
+              </div>
+
+              <div class="detail-info-item">
+                <div class="detail-info-label">Venue</div>
+                <div class="detail-info-value">
+                  <script>document.write(CONFIG.CEREMONY_VENUE)</script>
+                </div>
+              </div>
+
+              <div class="detail-info-item">
+                <div class="detail-info-label">Address</div>
+                <div class="detail-info-value">
+                  <script>document.write(CONFIG.CEREMONY_ADDRESS)</script>
+                  <br>
+                  <a href="#" target="_blank" rel="noopener">Get Directions</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-map">
+              <!-- Replace with your actual Google Maps embed -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9476519598093!2d-73.99185368459395!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1234567890123"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ceremony location map">
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Reception Details -->
+          <div class="detail-card">
+            <div class="detail-card-header">
+              <div class="detail-card-icon">🥂</div>
+              <h2 class="detail-card-title">Reception</h2>
+            </div>
+
+            <div class="detail-info">
+              <div class="detail-info-item">
+                <div class="detail-info-label">Time</div>
+                <div class="detail-info-value">
+                  <script>document.write(CONFIG.RECEPTION_TIME)</script>
+                </div>
+              </div>
+
+              <div class="detail-info-item">
+                <div class="detail-info-label">Venue</div>
+                <div class="detail-info-value">
+                  <script>document.write(CONFIG.RECEPTION_VENUE)</script>
+                </div>
+              </div>
+
+              <div class="detail-info-item">
+                <div class="detail-info-label">Address</div>
+                <div class="detail-info-value">
+                  <script>document.write(CONFIG.RECEPTION_ADDRESS)</script>
+                  <br>
+                  <a href="#" target="_blank" rel="noopener">Get Directions</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-map">
+              <!-- Replace with your actual Google Maps embed -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9476519598093!2d-73.99185368459395!3d40.74844097932847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1234567890123"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Reception location map">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule/Timeline -->
+    <section class="section" style="background-color: var(--color-white);">
+      <div class="container container-narrow">
+        <h2 class="text-center mb-xl">Schedule of Events</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">4:00 PM</div>
+            <div class="timeline-title">Ceremony Begins</div>
+            <div class="timeline-description">Please arrive 15 minutes early to find your seats</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">4:45 PM</div>
+            <div class="timeline-title">Cocktail Hour</div>
+            <div class="timeline-description">Enjoy drinks and hors d'oeuvres while we take photos</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">6:00 PM</div>
+            <div class="timeline-title">Reception & Dinner</div>
+            <div class="timeline-description">Dinner service begins, followed by toasts and speeches</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">7:30 PM</div>
+            <div class="timeline-title">First Dance & Dancing</div>
+            <div class="timeline-description">Let's celebrate on the dance floor!</div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">10:00 PM</div>
+            <div class="timeline-title">Grand Exit</div>
+            <div class="timeline-description">Send us off in style!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dress Code & Additional Info -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2">
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">👔 Dress Code</h3>
+            </div>
+            <div class="card-body">
+              <p><strong>Semi-Formal / Cocktail Attire</strong></p>
+              <p>We suggest cocktail dresses, dressy jumpsuits, or formal separates for ladies, and suits or dress shirts with slacks for gentlemen.</p>
+              <p class="text-secondary text-sm mt-md">Please note: The ceremony will be outdoors on grass, so consider your footwear accordingly!</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">🚗 Parking & Transportation</h3>
+            </div>
+            <div class="card-body">
+              <p><strong>Parking:</strong> Complimentary valet parking is available at the reception venue.</p>
+              <p><strong>Transportation:</strong> Shuttle service will be provided between recommended hotels and the venues.</p>
+              <p class="text-secondary text-sm mt-md">Rideshare services are also readily available in the area.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Accommodations -->
+    <section class="section" style="background-color: var(--color-white);">
+      <div class="container">
+        <h2 class="text-center mb-xl">Accommodations</h2>
+
+        <div class="accommodation-grid">
+
+          <div class="accommodation-card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80" alt="Hotel exterior" class="accommodation-image">
+            <div class="accommodation-content">
+              <h3 class="accommodation-name">Grand Hotel</h3>
+              <p class="accommodation-distance">📍 0.5 miles from venue</p>
+              <p class="accommodation-description">Elegant hotel with modern amenities. Book with code "WEDDING2026" for a special rate.</p>
+              <a href="#" target="_blank" rel="noopener" class="accommodation-link">Book Now →</a>
+            </div>
+          </div>
+
+          <div class="accommodation-card">
+            <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80" alt="Hotel lobby" class="accommodation-image">
+            <div class="accommodation-content">
+              <h3 class="accommodation-name">Cozy Inn & Suites</h3>
+              <p class="accommodation-distance">📍 1 mile from venue</p>
+              <p class="accommodation-description">Comfortable accommodations with complimentary breakfast. Mention our wedding for group rates.</p>
+              <a href="#" target="_blank" rel="noopener" class="accommodation-link">Book Now →</a>
+            </div>
+          </div>
+
+          <div class="accommodation-card">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&q=80" alt="Hotel room" class="accommodation-image">
+            <div class="accommodation-content">
+              <h3 class="accommodation-name">Riverside Resort</h3>
+              <p class="accommodation-distance">📍 2 miles from venue</p>
+              <p class="accommodation-description">Beautiful waterfront property with spa services. Perfect for a weekend getaway.</p>
+              <a href="#" target="_blank" rel="noopener" class="accommodation-link">Book Now →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+      <div class="container container-narrow">
+        <h2 class="text-center mb-xl">Frequently Asked Questions</h2>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <div class="faq-question">Can I bring a plus-one?</div>
+            <div class="faq-answer">Your invitation will specify if you have a plus-one. If you're unsure, please contact us directly.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Are children welcome?</div>
+            <div class="faq-answer">While we love your little ones, we've planned an adults-only celebration. We hope this gives you a night to relax and enjoy!</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">What if I have dietary restrictions?</div>
+            <div class="faq-answer">Please let us know about any dietary restrictions or allergies in your RSVP. We'll work with our caterer to accommodate your needs.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Will the ceremony and reception be indoors or outdoors?</div>
+            <div class="faq-answer">The ceremony will be outdoors (weather permitting), and the reception will be indoors with climate control.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Is there a gift registry?</div>
+            <div class="faq-answer">Your presence is the greatest gift! However, if you wish to give something, we have a registry available. Links will be shared with invited guests.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">When should I RSVP by?</div>
+            <div class="faq-answer">Please RSVP by July 15, 2026, so we can finalize our arrangements with the venue and caterer.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">What if I need to change my RSVP?</div>
+            <div class="faq-answer">
+              Please contact us as soon as possible at
+              <script>document.write(CONFIG.CONTACT_EMAIL)</script> or
+              <script>document.write(CONFIG.CONTACT_PHONE)</script>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Still Have Questions?</h2>
+          <p>
+            Feel free to reach out to us at<br>
+            <strong>
+              <script>document.write(CONFIG.CONTACT_EMAIL)</script>
+            </strong>
+            or
+            <strong>
+              <script>document.write(CONFIG.CONTACT_PHONE)</script>
+            </strong>
+          </p>
+          <a href="rsvp.html" class="btn btn-primary btn-large mt-lg">RSVP Now</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <script>document.write(CONFIG.COUPLE_NAMES)</script>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="index.html" class="footer-link">Home</a></li>
+        <li><a href="rsvp.html" class="footer-link">RSVP</a></li>
+        <li><a href="details.html" class="footer-link">Details</a></li>
+      </ul>
+
+      <p class="footer-copyright">
+        <script>
+          document.write(`&copy; ${new Date().getFullYear()} ${CONFIG.COUPLE_NAMES}. All rights reserved.`);
+        </script>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
