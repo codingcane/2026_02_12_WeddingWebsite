@@ -5,29 +5,29 @@
 
 /* CSS Variables - Design System */
 :root {
-  /* Primary Colors */
-  --color-primary: #8B7355;
-  --color-primary-light: #A89078;
-  --color-primary-dark: #6B5842;
+  /* Primary Colors - Sage Green Theme */
+  --color-primary: #87A878;
+  --color-primary-light: #A8C49A;
+  --color-primary-dark: #6B8E5F;
 
-  /* Accent Colors */
-  --color-accent: #D4AF37;
-  --color-accent-light: #E5C158;
-  --color-accent-dark: #B8941F;
+  /* Accent Colors - Complementary Gold/Cream */
+  --color-accent: #B8956A;
+  --color-accent-light: #D4B896;
+  --color-accent-dark: #9A7A52;
 
   /* Neutrals */
   --color-white: #FFFFFF;
-  --color-cream: #FAF7F2;
-  --color-gray-light: #E8E4DF;
+  --color-cream: #F5F7F3;
+  --color-gray-light: #E8EDE5;
   --color-gray: #9E9E9E;
   --color-gray-dark: #4A4A4A;
   --color-black: #2C2C2C;
 
   /* Semantic Colors */
-  --color-success: #5C8C5A;
+  --color-success: #6B8E5F;
   --color-error: #C85A54;
-  --color-warning: #E3A857;
-  --color-info: #5A7C9E;
+  --color-warning: #D4B896;
+  --color-info: #7FA39B;
 
   /* Font Families */
   --font-heading: 'Playfair Display', serif;
